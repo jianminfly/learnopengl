@@ -1,0 +1,15 @@
+﻿  源.cpp
+D:\code\opengl\learnopengl\CLAHE\源.cpp(2,1): warning C4005: “STB_IMAGE_IMPLEMENTATION”: 宏重定义
+D:\code\opengl\learnopengl\CLAHE\源.cpp : message : 参见“STB_IMAGE_IMPLEMENTATION”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
+D:\code\opengl\learnopengl\glad\include\glad\glad.h(32): message : 参见“APIENTRY”的前一个定义
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(43,17): warning C4018: “>”: 有符号/无符号不匹配
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(743,49): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(749,49): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(752,49): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(781,45): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(787,45): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\CLAHE\adaptHistEq.h(792,45): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\CLAHE\源.cpp(71,21): warning C4018: “>”: 有符号/无符号不匹配
+D:\code\opengl\learnopengl\CLAHE\源.cpp(87,40): warning C4244: “=”: 从“double”转换到“UINT”，可能丢失数据
+  CLAHE.vcxproj -> D:\code\opengl\learnopengl\Project1\Debug\CLAHE.exe

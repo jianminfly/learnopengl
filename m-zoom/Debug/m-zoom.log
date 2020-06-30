@@ -1,0 +1,5 @@
+﻿  源.cpp
+D:\code\opengl\learnopengl\m-zoom\源.cpp(2,1): warning C4005: “STB_IMAGE_IMPLEMENTATION”: 宏重定义
+D:\code\opengl\learnopengl\m-zoom\源.cpp : message : 参见“STB_IMAGE_IMPLEMENTATION”的前一个定义
+D:\code\opengl\learnopengl\m-zoom\源.cpp(164,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  m-zoom.vcxproj -> D:\code\opengl\learnopengl\Project1\Debug\m-zoom.exe

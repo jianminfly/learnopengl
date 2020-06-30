@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>D:\code\opengl\learnopengl\glfw-3.3.bin.WIN32\include;D:\code\opengl\learnopengl\glad\include;D:\code\opengl\learnopengl\glm-0.9.9.6\;D:\code\opengl\learnopengl;D:\code\opengl\learnopengl\assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\code\opengl\learnopengl\glfw-3.3.bin.WIN32\lib-vc2019;D:\code\opengl\learnopengl\assimp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>STB_IMAGE_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

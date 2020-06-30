@@ -1,0 +1,10 @@
+﻿  源.cpp
+D:\code\opengl\learnopengl\framebuffer\源.cpp(230,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(337,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(338,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(342,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(343,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(345,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(346,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\code\opengl\learnopengl\framebuffer\源.cpp(355,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  framebuffer.vcxproj -> D:\code\opengl\learnopengl\Project1\Debug\framebuffer.exe

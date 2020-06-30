@@ -1,0 +1,12 @@
+﻿  源.cpp
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(1,1): warning C4005: “STB_IMAGE_IMPLEMENTATION”: 宏重定义
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp : message : 参见“STB_IMAGE_IMPLEMENTATION”的前一个定义
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(314,26): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(315,26): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(316,26): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(321,22): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(322,22): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(323,22): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(487,21): warning C4018: “>”: 有符号/无符号不匹配
+D:\code\opengl\learnopengl\histogramEqualize\源.cpp(503,40): warning C4244: “=”: 从“double”转换到“UINT”，可能丢失数据
+  histogramEqualize.vcxproj -> D:\code\opengl\learnopengl\Project1\Debug\histogramEqualize.exe
