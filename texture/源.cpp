@@ -100,8 +100,8 @@ int main()
     glDisable(GL_DEPTH_TEST);
     glDisable(GL_STENCIL_TEST);
     glEnable(GL_TEXTURE_2D); 
-    //glEnable(GL_BLEND);
-    //glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
@@ -252,10 +252,10 @@ int main()
         glfwSwapBuffers(window);
         glfwPollEvents();
 
-        glFinish();
-        uint8_t* output = new uint8_t[1280*720*32 + 1];
-        glReadPixels(0, 0, SCR_WIDTH, SCR_HEIGHT, GL_RGBA, GL_UNSIGNED_BYTE, output);
-        bmp_write(output, SCR_WIDTH, SCR_HEIGHT, "C:\\Users\\EDZ\\Desktop\\新建文件夹\\222");
+        //glFinish();
+        //uint8_t* output = new uint8_t[1280*720*32 + 1];
+        //glReadPixels(0, 0, SCR_WIDTH, SCR_HEIGHT, GL_RGBA, GL_UNSIGNED_BYTE, output);
+        //bmp_write(output, SCR_WIDTH, SCR_HEIGHT, "C:\\Users\\EDZ\\Desktop\\新建文件夹\\222");
     }
 
     // optional: de-allocate all resources once they've outlived their purpose:

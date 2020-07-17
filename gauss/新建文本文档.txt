@@ -1,0 +1,36 @@
+// 绘制在一个纹理上面, 然后作为模糊的输入.
+    let textureFrame = this.sw.textureFrameManager.requestFull()
+    textureFrame.active()
+    this.toDraw.draw()
+    textureFrame.deactive()
+    this.toDrawBlur.useSampler('iChannel', textureFrame.sampler)
+    this.toDrawBlend.useSampler('iChannel', textureFrame.sampler)
+
+    // 存储有原始图片的纹理.
+    let originalSampler = textureFrame.sampler
+
+    // 横竖来回进行绘制.
+    for (let i = 0; i < iterateCount * 2; i++) {
+      if (i % 2 === 0) {
+        this.toDrawBlur.setUniform('samplingRadius', [blurRadius, 0])
+      }
+      else {
+        this.toDrawBlur.setUniform('samplingRadius', [0, blurRadius])
+      }
+
+      let textureFrame = this.sw.textureFrameManager.requestFull()
+      textureFrame.active()
+      this.toDrawBlur.draw()
+      textureFrame.deactive()
+      this.toDrawBlur.unuseSampler('iChannel')
+    
+      // 前面的绘制完成后再度作为绘制的输入.
+      if (i < iterateCount * 2 - 1) {
+        this.toDrawBlur.useSampler('iChannel', textureFrame.sampler)
+      }
+      else {
+        this.toDrawBlend.useSampler('iChannel', originalSampler, textureFrame.sampler)
+      }
+    }
+
+    this.toDrawBlend.draw()

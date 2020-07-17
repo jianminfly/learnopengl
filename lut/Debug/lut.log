@@ -1,0 +1,4 @@
+﻿  源.cpp
+D:\code\opengl\learnopengl\lut\源.cpp(2,1): warning C4005: “STB_IMAGE_IMPLEMENTATION”: 宏重定义
+D:\code\opengl\learnopengl\lut\源.cpp : message : 参见“STB_IMAGE_IMPLEMENTATION”的前一个定义
+  lut.vcxproj -> D:\code\opengl\learnopengl\Project1\Debug\lut.exe

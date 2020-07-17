@@ -1,6 +1,4 @@
-﻿  glad.c
-  源.cpp
+﻿  源.cpp
 D:\code\opengl\learnopengl\texture\源.cpp(2,1): warning C4005: “STB_IMAGE_IMPLEMENTATION”: 宏重定义
 D:\code\opengl\learnopengl\texture\源.cpp : message : 参见“STB_IMAGE_IMPLEMENTATION”的前一个定义
-LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   texture.vcxproj -> D:\code\opengl\learnopengl\Project1\Debug\texture.exe

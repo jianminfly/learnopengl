@@ -52,7 +52,7 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader ourShader("push.vs", "m-zoom.fs");
+    Shader ourShader("m-zoom.vs", "m-zoom.fs");
 
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -147,6 +147,7 @@ int main()
     stbi_image_free(data);
     glUniform1i(glGetUniformLocation(ourShader.ID, "texture1"), 0);
 
+
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -163,8 +164,6 @@ int main()
         ourShader.use();
         ourShader.setFloat("iProgress", abs(sin(glfwGetTime())));
 
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, texture);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)

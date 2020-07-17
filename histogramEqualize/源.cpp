@@ -602,13 +602,13 @@ int main()
     int width, height, nrChannels;
     stbi_set_flip_vertically_on_load(true);
     // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-    unsigned char* data = stbi_load("C:\\Users\\EDZ\\Desktop\\shader editor\\61.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("C:\\Users\\EDZ\\Desktop\\shader editor\\²¶»ñ.jpg", &width, &height, &nrChannels, 0);
     if (data)
     {
 
         imageWidth = width;
         imageHeight = height;
-        gao(data, width* height*3);
+        //gao(data, width* height*3);
 
 
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -618,9 +618,8 @@ int main()
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(data);
+    //stbi_image_free(data);
 
-    glViewport(0, 0, imageWidth, imageHeight);
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
