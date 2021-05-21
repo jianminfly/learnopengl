@@ -106,7 +106,7 @@ int main()
     int width, height, nrChannels;
     stbi_set_flip_vertically_on_load(true);
     // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-    unsigned char* data = stbi_load("C:\\Users\\EDZ\\Desktop\\shader editor\\1.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("1.jpg", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -131,7 +131,7 @@ int main()
         // load image, create texture and generate mipmaps
         int width, height, nrChannels;
         // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-        unsigned char* data = stbi_load("C:\\Users\\EDZ\\Desktop\\shader editor\\2.jpg", &width, &height, &nrChannels, 0);
+        unsigned char* data = stbi_load("2.jpg", &width, &height, &nrChannels, 0);
         if (data)
         {
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);//pngÕºœÒ–Ë π”√RGBA

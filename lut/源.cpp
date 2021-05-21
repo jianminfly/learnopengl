@@ -85,9 +85,19 @@ std::vector<std::string> vStringSplit(const  std::string& s, const std::string& 
     return elems;
 }
 
-
+int g_code = 11;
 int main()
 {
+    auto func = glfwSetErrorCallback([](int code, const char* msg) {
+        std::cout << "code is   " << code << "msg: " << msg << std::endl;
+        g_code = code;
+        });
+    const auto ctx = glfwGetCurrentContext();
+    std::cout << g_code;
+    int code = -1;
+    char ms[1024] = { 0 };
+    func(code, ms);
+
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
@@ -118,7 +128,6 @@ int main()
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
-
     // build and compile our shader zprogram
     // ------------------------------------
     Shader lutShader("base.vs", "lut1 - 3d.fs");
@@ -245,6 +254,7 @@ int main()
     lutShader.use();
     lutShader.setInt("texture1", 0);
     lutShader.setInt("texture2", 1);
+
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -262,7 +272,8 @@ int main()
             std::cout<<error;
         }
 
-        //unsigned char output[SCR_WIDTH * SCR_HEIGHT * 4 + 1] = { 0 };
+        //unsigned char* output = new unsigned char[SCR_WIDTH * SCR_HEIGHT * 4 + 1];
+        //memset(output, 0x00, sizeof(unsigned char) * (SCR_WIDTH * SCR_HEIGHT * 4 + 1));
         //glReadPixels(0, 0, SCR_WIDTH, SCR_HEIGHT, GL_RGBA, GL_UNSIGNED_BYTE, output);
 
         //bmp_write(output, SCR_WIDTH, SCR_HEIGHT, "sec");

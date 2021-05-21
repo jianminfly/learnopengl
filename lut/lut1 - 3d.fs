@@ -14,7 +14,7 @@ void main() {
 
 	vec4 srcColor = texture2D(texture1, TexCoord);
 	
-	vec4 newColor1 = texture3D(texture2, srcColor.rgb);
+	vec4 newColor1 = texture3D(texture2, vec3(TexCoord,1));//srcColor.rgb);
 		
 	fragColor = newColor1;//texture2D(texture2, vec2(0,1));
 }

@@ -224,7 +224,7 @@ int main()
     {
         // input
         // -----
-        processInput(window);
+        processInput(window); 
 
         // render
         // ------

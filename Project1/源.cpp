@@ -58,7 +58,7 @@ int main()
         return -1;
     }
 
-
+    auto str  = std::string((char*)glGetString(GL_VENDOR));
     // build and compile our shader program
     // ------------------------------------
     // vertex shader
